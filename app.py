@@ -15,13 +15,13 @@ genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
  
 model = genai.GenerativeModel("gemini-2.5-flash")
  
- st.set_page_config(page_title="AI Learning Buddy Pallavi", page_icon="🎓")
+st.set_page_config(page_title="AI Learning Buddy Pallavi", page_icon="🎓")
  
- st.title("🎓 AI Learning Buddy praveena")
+st.title("🎓 AI Learning Buddy praveena")
  
- topic = st.text_input("Enter a Topic")
+topic = st.text_input("Enter a Topic")
  
- option = st.selectbox(
+option = st.selectbox(
      "Choose Activity",
      [
          "Explain Concept",
@@ -29,7 +29,7 @@ model = genai.GenerativeModel("gemini-2.5-flash")
          "Generate Quiz",
          "Ask Anything"
      ]
- )
+)
  
  if st.button("Generate"):
  
