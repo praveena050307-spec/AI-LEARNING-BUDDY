@@ -51,5 +51,5 @@ if st.button("Generate"):
  
          response = model.generate_content(prompt)
  
-       st.write(response.text)
+         st.write(response.text)
 
